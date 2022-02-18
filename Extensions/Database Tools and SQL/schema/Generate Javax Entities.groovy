@@ -105,7 +105,7 @@ def getAnnotationString(table, col, spec) {
   if (attrs != null && attrs.contains(DasColumn.Attribute.PRIMARY_KEY)) {
     annotationString += "@Id\n  "
   }
-  annotationString += "@Column(name = ${col.getName()}"
+  annotationString += "@Column(name = \"${col.getName()}\""
   Integer size = -1
   String exception = ""
   if (spec != null && spec.contains("varchar2") && spec.contains("char")) {
